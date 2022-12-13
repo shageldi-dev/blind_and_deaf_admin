@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url(./assets/fonts/OpenSans-Bold.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url(./assets/fonts/OpenSans-ExtraBold.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(./assets/fonts/OpenSans-Light.ttf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'OpenSans-Medium';
+  src: url(./assets/fonts/OpenSans-Medium.ttf);
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(./assets/fonts/OpenSans-Regular.ttf);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url(./assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url(./assets/fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url(./assets/fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url(./assets/fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url(./assets/fonts/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url(./assets/fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url(./assets/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url(./assets/fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url(./assets/fonts/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url(./assets/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url(./assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url(./assets/fonts/Roboto-Thin.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto-Regular';
 }
