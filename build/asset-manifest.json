@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8f9a9db.css",
+    "main.js": "/static/js/main.959c372c.js",
+    "static/js/787.71018804.chunk.js": "/static/js/787.71018804.chunk.js",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Thin.ttf": "/static/media/Roboto-Thin.a732a12eb07742232407.ttf",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/Raleway-ExtraLight.ttf": "/static/media/Raleway-ExtraLight.e19d39bd2c0c5f58ffea.ttf",
+    "static/media/Raleway-Light.ttf": "/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
+    "static/media/Raleway-Medium.ttf": "/static/media/Raleway-Medium.601cda68c7b7bbcc9a12.ttf",
+    "static/media/Raleway-SemiBold.ttf": "/static/media/Raleway-SemiBold.cc770b2afb65067aae51.ttf",
+    "static/media/Raleway-ExtraBold.ttf": "/static/media/Raleway-ExtraBold.8b7015f87bd9859e1382.ttf",
+    "static/media/Raleway-Bold.ttf": "/static/media/Raleway-Bold.18960343b3da49bfd353.ttf",
+    "static/media/Raleway-Thin.ttf": "/static/media/Raleway-Thin.37b903083fc82c0bdc17.ttf",
+    "static/media/Raleway-Black.ttf": "/static/media/Raleway-Black.6d75f2b870b0a5df344d.ttf",
+    "static/media/OpenSans-ExtraBold.ttf": "/static/media/OpenSans-ExtraBold.df2044929df5b18703f1.ttf",
+    "static/media/OpenSans-Medium.ttf": "/static/media/OpenSans-Medium.a4894b36b47378c77c5f.ttf",
+    "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
+    "static/media/OpenSans-Bold.ttf": "/static/media/OpenSans-Bold.fa428cdd2e334e2be904.ttf",
+    "static/media/OpenSans-Light.ttf": "/static/media/OpenSans-Light.55d5015c3ced03510e63.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/static/media/OpenSans-SemiBold.2f17aae884058c5a85df.ttf",
+    "index.html": "/index.html",
+    "main.a8f9a9db.css.map": "/static/css/main.a8f9a9db.css.map",
+    "main.959c372c.js.map": "/static/js/main.959c372c.js.map",
+    "787.71018804.chunk.js.map": "/static/js/787.71018804.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f9a9db.css",
+    "static/js/main.959c372c.js"
+  ]
+}
