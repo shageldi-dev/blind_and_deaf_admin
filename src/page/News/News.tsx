@@ -1,30 +1,29 @@
-import React, {useContext, useEffect, useState} from 'react';
-import {styled} from '@mui/material/styles';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell, {tableCellClasses} from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import {Button, IconButton, Pagination, Skeleton, Stack} from "@mui/material";
-import {AppContext} from "../../App";
-import Image from 'mui-image'
-import {ImageStyle} from "../../common/theme";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import AddIcon from '@mui/icons-material/Add';
+import AddIcon from "@mui/icons-material/Add";
 import AddNew from "./AddNew";
-import NewsFilter from "../../components/News/NewsFilter";
-import {AxiosInstance} from "../../common/AxiosInstance";
-import {GBody, INews, IPagination} from "../../common/Model/Model";
-import {convertDateAndTime, getImagePath, valueChecker} from "../../common/utils";
-import Loading from "../../components/Common/Loading";
-import {showError, showSuccess} from "../../components/Common/Alert";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 import EditNews from "./EditNews";
-import {useTranslation} from "react-i18next";
-
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Image from "mui-image";
+import Loading from "../../components/Common/Loading";
+import NewsFilter from "../../components/News/NewsFilter";
+import Paper from "@mui/material/Paper";
+import React, { useContext, useEffect, useState } from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell, { tableCellClasses } from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import { Button, IconButton, Pagination, Skeleton, Stack } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import { useTranslation } from "react-i18next";
+import { AppContext } from "../../App";
+import { AxiosInstance } from "../../common/AxiosInstance";
+import { GBody, INews, IPagination } from "../../common/Model/Model";
+import { ImageStyle } from "../../common/theme";
+import { convertDateAndTime, getImagePath, valueChecker } from "../../common/utils";
+import { showError, showSuccess } from "../../components/Common/Alert";
 
 const StyledTableCell = styled(TableCell)(({theme}) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -91,7 +90,7 @@ const News:React.FC<IProps> = (props:IProps) => {
     function deleteNews(id:number){
         if(window.confirm(t('want_delete'))){
             setLoading(true);
-            AxiosInstance.delete('/delete-news/'+id)
+            AxiosInstance.patch('/delete-news/'+id)
                 .then(response=>{
                     showSuccess(t('Deleted!'));
                     setLoading(false);
