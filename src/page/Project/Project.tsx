@@ -91,7 +91,7 @@ const Project:React.FC<IProps> = (props:IProps) => {
     function deleteNews(id:number){
         if(window.confirm(t('want_delete'))){
             setLoading(true);
-            AxiosInstance.delete('/delete-news/'+id)
+            AxiosInstance.patch('/delete-news/'+id)
                 .then(response=>{
                     showSuccess(t('Deleted!'));
                     setLoading(false);
