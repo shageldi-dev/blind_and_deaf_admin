@@ -102,6 +102,8 @@ const AddNew:React.FC<IProps>=(props:IProps)=> {
                 formData.append('other', selectedOther[k]);
             }
         }
+
+        setLoading(true);
         AxiosInstanceFormData.post('/add-news',formData)
             .then(response => {
                 if (!response.data.error) {

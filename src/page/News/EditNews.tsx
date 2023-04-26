@@ -113,6 +113,7 @@ const EditNews:React.FC<IProps>=(props:IProps)=> {
                 formData.append('other', selectedOther[k]);
             }
         }
+        setLoading(true)
         AxiosInstanceFormData.put('/edit-news',formData)
             .then(response => {
                 if (!response.data.error) {
