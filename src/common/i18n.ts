@@ -69,7 +69,13 @@ const resources = {
             "Enter your username and password":"Введите имя пользователя и пароль",
             "Username...":"Имя пользователя...",
             "Password...":"Пароль...",
-            "Login":"логин"
+            "Login":"логин",
+            "about":"О нас",
+            "links":"Ссылки",
+            "partners":"Партнеры",
+            "parts":"Части",
+            "other_about":"Другое о нас",
+            "product":"Product"
         }
     },
     tm: {
@@ -136,7 +142,13 @@ const resources = {
             "Enter your username and password":"Ulanyjy adyňyzy we parolyňyzy giriziň",
             "Username...":"Ulanyjy ady ...",
             "Password...":"Parol ...",
-            "Login":"Içeri gir"
+            "Login":"Içeri gir",
+            "about":"Biz barada",
+            "links":"Salgylanmalar",
+            "partners":"Hyzmatdaşlar",
+            "parts":"Gurluşy",
+            "other_about":"Goşmaça biz barada",
+            "product":"Önümler"
         }
     },
 };

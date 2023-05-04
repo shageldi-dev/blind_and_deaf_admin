@@ -15,6 +15,7 @@ import Login from "./page/Login/Login";
 import {ToastContainer} from "react-toastify";
 import Loading from "./components/Common/Loading";
 import Certificate from "./page/Certificate/Certificate";
+import About from "./page/About/About";
 
 export interface ContextProps{
     t?:any,
@@ -82,9 +83,15 @@ function App() {
                         <Route path="/" element={<Index/>}>
                             <Route index element={<Home/>}/>
                             <Route path={'/news'} element={<News isProject={false}/>}/>
-                            <Route path={'/project'} element={<Project isProject={true}/>}/>
+                            <Route path={'/project'} element={<Project isProject={true} isProduct={false}/>}/>
+                            <Route path={'/product'} element={<Project isProject={false} isProduct={true}/>}/>
                             <Route path={'/certificate'} element={<Certificate/>}/>
                             <Route path={'/settings'} element={<Settings/>}/>
+                            <Route path={'/about'} element={<About is_partner={false} type={0}/>}/>
+                            <Route path={'/links'} element={<About is_partner={false} type={1}/>}/>
+                            <Route path={'/partners'} element={<About is_partner={true} type={2}/>}/>
+                            <Route path={'/parts'} element={<About is_partner={false} type={3}/>}/>
+                            <Route path={'/other_about'} element={<About is_partner={false} type={4}/>}/>
                         </Route>
                         <Route path={'/login'} element={<Login/>}/>
                     </Routes>

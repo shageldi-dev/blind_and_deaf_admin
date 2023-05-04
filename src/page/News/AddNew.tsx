@@ -31,7 +31,8 @@ const Transition = React.forwardRef(function Transition(
 
 interface IProps{
     getData(): void,
-    isProject:boolean
+    isProject:boolean,
+    isProduct: boolean
 }
 
 const AddNew:React.FC<IProps>=(props:IProps)=> {
@@ -89,6 +90,7 @@ const AddNew:React.FC<IProps>=(props:IProps)=> {
         formData.append('content_ru',contentRu);
         formData.append('content_en',contentEn);
         formData.append('is_project',props.isProject.toString());
+        formData.append('is_product',props.isProduct.toString());
         if(selectedVideos?.length && selectedVideos.length>0){
             formData.append('video',selectedVideos[0]);
         }

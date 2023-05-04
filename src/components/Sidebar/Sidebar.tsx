@@ -10,6 +10,11 @@ import {AppContext} from "../../App";
 import ArticleIcon from '@mui/icons-material/Article';
 import {useNavigate} from "react-router-dom";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import InfoIcon from '@mui/icons-material/Info';
+import WebIcon from '@mui/icons-material/Web';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import SafetyDividerIcon from '@mui/icons-material/SafetyDivider';
+import DiscountIcon from '@mui/icons-material/Discount';
 import i18n from "i18next";
 
 
@@ -41,6 +46,48 @@ export const sideitems = [
         title: 'certificate',
         endIcon: <KeyboardArrowRightIcon/>,
         endLink: '/certificate'
+    },
+    {
+        link: "/about",
+        icon: <InfoIcon/>,
+        title: 'about',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/about'
+    },
+    {
+        link: "/product",
+        icon: <DiscountIcon/>,
+        title: 'product',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/product'
+    },
+    {
+        link: "/links",
+        icon: <WebIcon/>,
+        title: 'links',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/links'
+    },
+    {
+        link: "/partners",
+        icon: <HandshakeIcon/>,
+        title: 'partners',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/partners'
+    },
+    {
+        link: "/parts",
+        icon: <SafetyDividerIcon/>,
+        title: 'parts',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/parts'
+    },
+    {
+        link: "/other_about",
+        icon: <InfoIcon/>,
+        title: 'other_about',
+        endIcon: <KeyboardArrowRightIcon/>,
+        endLink: '/other_about'
     }
 ]
 
@@ -59,7 +106,8 @@ const SideBackground = styled.div<Props>`
   bottom: 0;
   position: fixed;
   width: ${props => props.width ? props.width : '20%'};
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 `;
 
 
@@ -82,27 +130,26 @@ const Sidebar: React.FC<IProps> = (props: IProps) => {
                 }
 
                 <Divider color={'#31455e'}/>
+                    {
+                        sideitems.map((item, i) => {
+                            return (
+                                <div key={`side-item-${i}`}
+                                     onClick={() => {
+                                         if (props.close) {
+                                             props.close()
+                                         }
+                                         navigation(item.link);
+                                     }}>
+                                    <NavItem icon={item.icon} title={item.title} endIcon={item.endIcon} link={item.link}
+                                             endLink={item.endLink}/>
+                                    <Divider color={'#31455e'}/>
+                                </div>
+                            )
+                        })
+                    }
 
-                {
-                    sideitems.map((item, i) => {
-                        return (
-                            <div key={`side-item-${i}`}
-                                 onClick={() => {
-                                     if (props.close) {
-                                         props.close()
-                                     }
-                                     navigation(item.link);
-                                 }}>
-                                <NavItem icon={item.icon} title={item.title} endIcon={item.endIcon} link={item.link}
-                                         endLink={item.endLink}/>
-                                <Divider color={'#31455e'}/>
-                            </div>
-                        )
-                    })
-                }
 
-
-                <Box sx={{bottom: 0, position: 'fixed', width: isMobile ? '100%' : '20%'}}>
+                <Box sx={{width: isMobile ? '100%' : '100%'}}>
                     <Divider color={'#31455e'}/>
                     <Stack direction={'row'} spacing={2} sx={{width: '100%', mt: 1, mb: 1}} alignItems={'center'}
                            justifyContent={'center'}>

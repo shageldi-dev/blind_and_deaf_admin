@@ -9,6 +9,23 @@ export type IPagination<T>={
     pageCount:number
 }
 
+export interface IAbout {
+    id:         number;
+    title_tm:   string;
+    title_ru:   string;
+    title_en:   string;
+    desc_tm:    string;
+    desc_ru:    string;
+    desc_en:    string;
+    image:      string;
+    type:       number;
+    created_at: Date;
+    updated_at: Date;
+    link_url:   string;
+    is_partner: boolean;
+}
+
+
 export type INews={
     id:number,
     title_tm:string,
@@ -64,3 +81,5 @@ export type IInbox={
     created_at:string,
     updated_at:string
 }
+
+export type AboutType = 0 | 1 | 2 | 3 | 4;

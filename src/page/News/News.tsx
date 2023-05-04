@@ -60,7 +60,7 @@ const News:React.FC<IProps> = (props:IProps) => {
 
     function getData() {
         setLoading(true);
-        AxiosInstance.get(`/get-news?page=${page}&limit=20&is_project=${props.isProject}`)
+        AxiosInstance.get(`/get-news?page=${page}&limit=20&is_project=${props.isProject}&is_product=false`)
             .then(response => {
                 if (!response.data.error) {
                     try {
@@ -107,7 +107,7 @@ const News:React.FC<IProps> = (props:IProps) => {
         <Stack sx={{m: isMobile ? 1 : 3}} alignItems={'center'}>
             <Stack direction={'row'} sx={{width: '100%', mb: 2}} alignItems={'center'} justifyContent={'space-between'}>
                 <NewsFilter/>
-                <AddNew getData={getData} isProject={props.isProject}/>
+                <AddNew getData={getData} isProject={props.isProject} isProduct={false}/>
             </Stack>
             <TableContainer component={Paper}>
                 <Table sx={{minWidth: 700}} aria-label="customized table">

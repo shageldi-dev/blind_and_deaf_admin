@@ -35,3 +35,11 @@ export const convertTimeStampToTime=(s:string)=>{
 export const convertDateAndTime=(s:string)=>{
     return `${convertTimeStampToDate(s)} ${convertTimeStampToTime(s)}`
 }
+
+export const ABOUT_TYPE = {
+    ABOUT_US: 0,
+    LINK: 1,
+    PARTNER: 2,
+    PARTS: 3,
+    OTHER_ABOUT: 4
+}
